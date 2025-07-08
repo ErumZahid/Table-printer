@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Multiplication Table of <%= tableNumber %> up to <%= length %></h1>
+        <table border="1" cellpadding="10">
+            <% table.forEach(row => { %>
+                <tr>
+                    <td><%= tableNumber %> x <%= row.index %> = <%= row.result %></td>
+                </tr>
+            <% }) %>
+        </table>
+        <br>
+        <a href="/">Generate Another</a>
+    </center>
+</body>
+</html>
+
+
+
+
 # Table-printer
 # Table-printer
 const express = require('express');
